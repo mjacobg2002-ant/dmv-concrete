@@ -37,7 +37,7 @@
   --shell:        1240px;
   --gutter:       clamp(20px, 5vw, 64px);
   --radius:       4px;
-  --header-h:     84px;
+  --header-h:     100px;
   --ease:         cubic-bezier(.22,.61,.36,1);
 
   --shadow-sm:    0 1px 2px rgba(20,22,24,.06), 0 4px 14px rgba(20,22,24,.06);
@@ -137,8 +137,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- Logo ---------- */
 .logo { display: inline-flex; align-items: center; gap: 13px; }
-.logo__mark { flex: none; height: 64px; width: auto; display: block; }
-.site-header[data-scrolled] .logo__mark { height: 62px; transition: height .3s var(--ease); }
+.logo__mark { flex: none; height: 82px; width: auto; display: block; }
+.site-header[data-scrolled] .logo__mark { height: 66px; transition: height .3s var(--ease); }
 
 /* text logo (GDR has no real logo — built as type) */
 .logo__text { display: flex; flex-direction: column; line-height: 1; border-left: 3px solid var(--accent); padding-left: 13px; }
@@ -177,7 +177,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   height: var(--header-h);
   transition: height .3s var(--ease);
 }
-.site-header[data-scrolled] .header__inner { height: 66px; }
+.site-header[data-scrolled] .header__inner { height: 80px; }
 .nav { display: flex; align-items: center; gap: clamp(14px, 1.8vw, 30px); margin-left: auto; }
 .nav a {
   font-family: var(--font-display); font-weight: 600; font-size: .92rem;
@@ -522,7 +522,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .footer__bar { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-block: 24px; border-top: 1px solid var(--line-dark); font-size: .84rem; color: var(--concrete); }
 .footer__meta { color: var(--concrete); }
 .footer__addr { display: block; padding: 6px 0; color: var(--concrete-2); font-size: .95rem; }
-.footer__brand .logo__mark { height: 60px; }
+.footer__brand .logo__mark { height: 84px; }
 
 /* ---------- Reviews ---------- */
 .reviews__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
@@ -593,11 +593,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 @media (max-width: 900px) {
-  :root { --header-h: 84px; }
+  :root { --header-h: 88px; }
   .nav, .header__actions { display: none; }
   .menu-toggle { display: flex; }
-  .logo__mark { height: 62px; }
-  .site-header[data-scrolled] .logo__mark { height: 54px; }
+  .logo__mark { height: 66px; }
+  .site-header[data-scrolled] .logo__mark { height: 58px; }
   .site-header[data-scrolled] .header__inner { height: 72px; }
   .hero__inner { padding-block: clamp(108px, 22vw, 156px) clamp(56px, 12vw, 96px); }
   .hero__bg .hero__video { object-position: center 35%; }
