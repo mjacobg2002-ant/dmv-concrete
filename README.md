@@ -41,6 +41,7 @@ cubic-yards field also feeds naturally into the order/contact form.
   `prefers-reduced-motion`, descriptive alt text, ARIA tabs on the calculator.
 - SEO: descriptive title/meta, Open Graph, and `GeneralContractor` JSON-LD with service
   areas, opening hours, and social profiles.
+- **Analytics:** Vercel Web Analytics — enable *Analytics* on the Vercel project and the script is served automatically (no key). A custom `order_request` event fires on form submit. Note: Web Analytics only reports when the site is served from Vercel.
 
 ## Structure
 ```
